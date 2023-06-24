@@ -10,8 +10,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("method"))
 app.use(express.json());
 app.use(session({ secret:"bookChallenge",
-resave: false, //por cada req ala server ssee reinnicia la session cookie
-saveUninitialized: true //  si es falsa,la session cookie no se guarda hasta que se modifique logueandose
+resave: false, 
+saveUninitialized: true 
 })) 
 app.use(cookieparser());
 app.use(cookieCheck)
